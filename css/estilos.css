@@ -1,0 +1,250 @@
+/* Estilos globales*/
+
+
+                                                          /* Estilos menu navegacion */
+
+* {
+  margin: 0px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+header {
+  background-color: black;
+}
+
+header a {
+  color: #E75ECA;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav img{
+  width: 80px;
+  height: 80px;
+}
+
+body {
+  background-color: #171717;
+}
+
+                                                          /* Estilos footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 1.1%;
+}
+
+footer a {
+  color: #E75ECA;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 20px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+  margin: 0 3px;
+}
+
+
+
+
+                                                          /* Estilos pagina inicio */
+
+.secBusqueda{
+  text-align: center;
+  padding-top: 3.5%;
+  padding-bottom: 5.5%;
+}
+
+#imgTecladoInicio{
+  width: 80%;
+  padding: 0 10% 0 10%;
+  margin-bottom: 5%;
+}
+
+input[type="search"] {
+  width: 40%;
+  align-items: center;
+  margin: 3% 0 3% 0;
+  padding: 0.7%;
+  border: 2px solid black;
+  border-radius: 40px 20px 20px 40px;
+  background: url('../imagenes/iconos/busqueda.svg') no-repeat right center;
+  background-color: #2E2E2E;
+  background-size: 5%;
+}
+
+.secIntro{
+  margin: 0 6% 0 6%;
+  padding-bottom: 6%;
+}
+
+.secIntro p {
+  padding: 0.5%;
+  margin: 0 1% 0 1%;
+}
+
+h1{
+  color: #EB75D1;
+  margin: 1%;
+  font-size: 32px;
+}
+
+p{
+  font-size: 32px;
+  color: white;
+}
+
+/* Estilos slider */
+
+.divSlider {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.divSlider img {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.divSlider button {
+  position: absolute;
+  top: 46%;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.divSlider button.left {
+  left: 10px;
+}
+
+.divSlider button.right {
+  right: 10px;
+}
+
+
+                                /* Estilos pagina teclados inicio */
+
+.pagTeclados{
+  display: flex;
+  flex-direction: row;
+  background-color: #171717;
+}
+
+/* Estilo filtros */
+
+.secFiltros{
+  background-color: #292929;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7%;
+}
+
+.filtros{
+  margin-top: 4%;
+}
+
+.filtros h5{
+  color: #EE8CD9;
+  font-size: 30px;
+font-weight: bold;
+margin-top: 13%;
+}
+
+.filtros label{
+  color: #F8D1F0;
+  font-size: 26px;
+}
+
+.opcionsFiltros{
+  margin-left: 10%;
+}
+
+
+/* Estilo cartas teclados */
+.secTeclados{
+  display: flex;
+  flex-direction: column;
+}
+.secTeclados > div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+.divTeclado {
+  width: 290px;
+  height: 500px;
+  margin: 10px 10px 30px 30px;
+  box-sizing: border-box;
+  background-color: #2E2E2E;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.divTeclado a{
+  text-decoration: none;
+}
+
+.divTeclado img {
+  width: 100%;
+  height: 190px;
+}
+
+.secTeclados h1 {
+  margin: 10px 0;
+  font-size: 35px;
+  color: #EB75D1;
+  margin: 2% 0 4% 6%;
+}
+
+.divTeclado h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #EB75D1;
+}
+
+.divTeclado p {
+  font-size: 20px;
+  color: #F8D1F0;
+  padding: 2%;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+
+
