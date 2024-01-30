@@ -1,16 +1,48 @@
 /* Estilos globales*/
 
+/* Modo oscuro */
+
+.modoOscuro{
+
+  --colorFondoHeader: #000000;
+  --colorLetra: #ffffff;
+  --colorFondoBody: #171717;
+}
+
+.modoDia{
+  --colorFondoHeader: rgb(136, 136, 136);
+  --colorLetra: rgb(46, 44, 44);
+  --colorFondoBody: #CCCCCC;
+}
+
+.luna{
+  position: absolute;
+  right: 0;
+}
+
+#logo:hover{
+  animation: rotation 1s  ;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* Estilos menu navegacion */
 
 * {
   margin: 0px;
   font-family: 'Oswald', sans-serif;
-  color: white;
 }
 
 header {
-  background-color: black;
+  background-color: var(--colorFondoHeader);
 }
 
 header a {
@@ -34,7 +66,7 @@ nav img {
 }
 
 body {
-  background-color: #171717;
+  background-color: var(--colorFondoBody);
 }
 
 /* Estilos footer */
@@ -44,13 +76,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(136, 136, 136);
   padding: 1.1%;
 }
 
 footer a {
   color: #E75ECA;
   text-decoration: none;
+  font-weight: bold;
   margin: 5px;
   font-size: 20px;
 }
@@ -91,7 +124,7 @@ input[type="search"] {
   border: 2px solid black;
   border-radius: 40px 20px 20px 40px;
   background: url('../imagenes/iconos/busqueda.svg') no-repeat right center;
-  background-color: #2E2E2E;
+  background-color: #ffffff;
   background-size: 5%;
 }
 
@@ -112,8 +145,8 @@ h1 {
 }
 
 p {
-  font-size: 32px;
-  color: white;
+  font-size: 28px;
+  color: var(--colorLetra);
 }
 
 /* Estilos slider */
