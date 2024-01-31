@@ -1,0 +1,82 @@
+/* Estilos pagina inicio */
+
+.secBusqueda {
+  text-align: center;
+  padding-top: 3.5%;
+  padding-bottom: 5.5%;
+}
+
+#imgTecladoInicio {
+  width: 80%;
+  padding: 0 10% 0 10%;
+  margin-bottom: 5%;
+}
+
+input[type="search"] {
+  width: 40%;
+  align-items: center;
+  margin: 3% 0 3% 0;
+  padding: 0.7%;
+  border: 2px solid black;
+  border-radius: 40px 20px 20px 40px;
+  background: url('../imagenes/iconos/busqueda.svg') no-repeat right center;
+  background-color: #2E2E2E;
+  background-size: 5%;
+}
+
+.secIntro {
+  margin: 0 6% 0 6%;
+  padding-bottom: 6%;
+}
+
+.secIntro p {
+  padding: 0.5%;
+  margin: 0 1% 0 1%;
+}
+
+h1 {
+  color: #EB75D1;
+  margin: 1%;
+  font-size: 32px;
+}
+
+p {
+  font-size: 32px;
+  color: white;
+}
+
+/* Estilos slider */
+
+.divSlider {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.divSlider img {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.divSlider button {
+  position: absolute;
+  top: 46%;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.divSlider button.left {
+  left: 10px;
+}
+
+.divSlider button.right {
+  right: 10px;
+}

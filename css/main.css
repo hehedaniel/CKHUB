@@ -1,0 +1,86 @@
+/* Estilos menu navegacion */
+
+* {
+  margin: 0px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+header {
+  background-color: black;
+}
+
+header a {
+  color: #E75ECA;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav img {
+  width: 80px;
+  height: 80px;
+}
+
+body {
+  background-color: #171717;
+}
+
+/* Estilos footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 1.1%;
+}
+
+footer a {
+  color: #E75ECA;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 20px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+  margin: 0 3px;
+}
+
+/* Estilos nuevos */
+
+input[type=checkbox]:hover {
+  appearance: none;
+  background-color: #B79CCD;
+  border-radius: 25%;
+}
+
+input[type=checkbox]:checked {
+  appearance: none;
+  background: rgb(231, 94, 202) url('../imagenes/iconos/Icons.svg') no-repeat right center;
+  background-size: contain;
+  border-radius: 25%;
+}
+
+input[type=checkbox]:checked:hover {
+  appearance: none;
+  background: rgb(83, 55, 108) url('../imagenes/iconos/Icons.svg') no-repeat right center;
+  border-radius: 25%;
+  background-size: contain;
+}
