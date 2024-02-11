@@ -1,0 +1,41 @@
+.infoKeymap{
+  display: flex;
+  flex-direction: column;
+  color: var(--colorLetra);
+}
+
+.infoKeymap p {
+  font-size: clamp(12px, 2vw, 24px);
+}
+
+.keymap{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 2%;
+}
+
+.secInfoKeymap{
+  margin: 3% 5% 8% 5%;
+}
+
+ul, ol, li{
+  font-size: 24px;
+  font-size: clamp(10px, 1.8vw, 22px);
+}
+
+pre{
+  font-size: clamp(6px, 0.8vw, 22px);
+  font-family: monospace;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}

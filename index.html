@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CKHUB</title>
-  <link rel="stylesheet" href="css/estilosDay.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+  <link rel="stylesheet" href="css/main.css"> <!-- Estilos globales -->
+  <link rel="stylesheet" href="css/index.css"> <!-- Estilo propia pagina -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="modoOscuro" id="body">
@@ -20,17 +20,17 @@
       <a href="teclados.html">Teclados</a>
       <a href="keymaps.html">Keymaps</a>
       <a href="qmkInfo.html">QMK</a>
-      <a href="" onclick="return modoOscuro()" class="luna"><img src="imagenes/oscuro.png" alt=""  ></a>
+      <a href="#" onclick="return modoOscuro()"><img src="imagenes/iconos/theme.svg" alt="themeImg" class="themeImg"></a>
     </nav>
   </header>
   <main>
     <section class="secBusqueda">
       <input type="search" name="busqueda" id="busqueda">
-      <img src="imagenes/tecladoInicio.jpg" alt="tecladoInicio" id="imgTecladoInicio">
+      <img src="imagenes/tecladoInicio.webp" alt="tecladoInicio" id="imgTecladoInicio">
     </section>
     <section class="secIntro">
       <div>
-        <h1 class="titIntro">¿Por qué usar un teclado mecánico custom?</h1>
+        <h1>¿Por qué usar un teclado mecánico custom?</h1>
         <p class="pIntrod">
           Sumergirse en el mundo de los teclados mecánicos personalizados va más allá de una simple elección; es una
           experiencia que transforma tu conexión con la escritura. Al optar por un teclado mecánico personalizado,
@@ -44,9 +44,9 @@
           comunidad apasionada que comparte la misma fascinación por los teclados mecánicos personalizados. Descubre el
           placer de escribir de una manera que se adapte perfectamente a ti.</p>
         <div class="divSlider">
-          <button class="left">&lt;</button>
-          <img src="imagenes/teclados/sofle/sofle.jpg" alt="Imagen">
-          <button class="right">&gt;</button>
+          <button class="left" onclick="cambiarImagen('anterior')">&lt;</button>
+          <img src="imagenes/teclados/sofle/sofle.webp" alt="Imagen" id="imgSlider">
+          <button class="right" onclick="cambiarImagen('siguiente')">&gt;</button>
         </div>
       </div>
     </section>
@@ -55,46 +55,12 @@
     <a href="contacto.html">Contacto</a>
     <div>
       <a href="github.com" target="_blank"> <img src="imagenes/iconos/github.svg" alt="github"> </a>
-      <a href="twitter.com" target="_blank"> <img src="imagenes/iconos/twitter.svg" alt="twitter"> </a>
+      <a href="twitter.com" target="_blank"> <img src="imagenes/iconos/twitter.svg" alt="twitter / X"> </a>
       <a href="reddit.com" target="_blank"> <img src="imagenes/iconos/reddit.svg" alt="reddit"> </a>
-      <a href="discord.com" target="_blank"> <img src="imagenes/iconos/discord.svg" alt="discord"> </a>
+      <a href="discord.com" target="_blank"> <img src="imagenes/iconos/discord.svg" alt="discord" class="filtro"> </a>
     </div>
   </footer>
-
-  <script>
-    function modoOscuro() {
-      let body = document.getElementById("body");
-      let modo = body.getAttribute("class");
-
-      if (modo == "modoDia") {
-        body.classList.remove("modoDia");
-        body.classList.add("modoOscuro");
-        localStorage.setItem('modoOscuro', 'true');
-      } else {
-        body.classList.remove("modoOscuro");
-        body.classList.add("modoDia");
-        localStorage.setItem('modoOscuro', 'false');
-      }
-      return false;
-    }
-
-    function checkModo() {
-      let body = document.getElementById("body");
-      let modo = body.getAttribute("class");
-
-
-      if (localStorage.getItem("modoOscuro") === "true"){
-        body.classList.remove("modoDia");
-        body.classList.add("modoOscuro");
-      } else {
-        body.classList.remove("modoOscuro");
-        body.classList.add("modoDia");
-      }
-      return false;
-    }
-
-    checkModo();
-  </script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

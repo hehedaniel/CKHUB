@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CKHUB</title>
-  <link rel="stylesheet" href="css/estilosDay.css">
+  <link rel="stylesheet" href="css/main.css"> <!-- Estilos globales -->
+  <link rel="stylesheet" href="css/keymapsInfo.css"> <!-- Estilo propia pagina -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
@@ -13,24 +14,24 @@
 </head>
 
 <body class="modoOscuro" id="body">
-
   <header>
     <nav>
-      <a href="index.html"><img src="imagenes/logo.png" alt="CKHUB-logo"></a>
+      <a href="index.html"><img src="imagenes/logo.png" alt="CKHUB-logo" id="logo"></a>
       <a href="teclados.html">Teclados</a>
       <a href="keymaps.html">Keymaps</a>
       <a href="qmkInfo.html">QMK</a>
+      <a href="#" onclick="return modoOscuro()"><img src="imagenes/iconos/theme.svg" alt="themeImg" class="themeImg"></a>
     </nav>
   </header>
   <main>
     <section class="secInfoKeymap">
-      <h4 class="rutaKeymap">
+      <h4 class="ruta">
         <a href="index.html">/home/</a>
-        <a href="teclados.html">teclados/</a>
-        <a href="teclado-sofle.html">Sofle.txt</a>
+        <a href="keyamps.html">teclados/</a>
+        <a href="keyamps-sofle.html">Sofle.txt</a>
       </h4>
-      <h1 class="tituloKeymap">Sofle</h1>
-      <h4 class="usuarioKeymap">Escrito por: user2 <a href="github.com"><img src="imagenes/iconos/reddit.svg" alt=""></a></h4>
+      <h1 class="titulo">Sofle</h1>
+      <h4 class="usuario">Escrito por: user2 <a href="github.com"><img src="imagenes/iconos/reddit.svg" alt=""></a></h4>
       <section class="infoKeymap">
         <p>El keymap por defecto de este teclado es el siguiente:</p>
         <div class="keymap">
@@ -49,13 +50,12 @@
   *            `-----------------------------------''-------'          '-------''-----------------------------------'
           </pre>
         </div>
-        <p>Tambien cuenta con 3 capas adicionales en las que incluye funcionalidades como:
+        <p>También cuenta con 3 capas adicionales en las que incluye funcionalidades como:</p>
         <ul>
-          <li>Configuracion de leds</li>
-          <li>Flechas de direccion</li>
+          <li>Configuración de leds</li>
+          <li>Flechas de dirección</li>
           <li>Teclas Home, Pause, Page Up, Page Down</li>
         </ul>
-        </p>
       </section>
     </section>
   </main>
@@ -68,41 +68,8 @@
       <a href="discord.com" target="_blank"> <img src="imagenes/iconos/discord.svg" alt="discord"> </a>
     </div>
   </footer>
-  <script>
-    function modoOscuro() {
-      let body = document.getElementById("body");
-      let modo = body.getAttribute("class");
 
-
-      if (modo == "modoDia") {
-        body.classList.remove("modoDia");
-        body.classList.add("modoOscuro");
-        localStorage.setItem('modoOscuro', 'true');
-      } else {
-        body.classList.remove("modoOscuro");
-        body.classList.add("modoDia");
-        localStorage.setItem('modoOscuro', 'false');
-      }
-      return false;
-    }
-
-    function checkModo() {
-      let body = document.getElementById("body");
-      let modo = body.getAttribute("class");
-
-
-      if (localStorage.getItem("modoOscuro") === "true"){
-        body.classList.remove("modoDia");
-        body.classList.add("modoOscuro");
-      } else {
-        body.classList.remove("modoOscuro");
-        body.classList.add("modoDia");
-      }
-      return false;
-    }
-
-    checkModo();
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>

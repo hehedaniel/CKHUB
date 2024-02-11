@@ -1,4 +1,4 @@
-/* Estilos pagina inicio */
+/* Archivos con los estilos unicos para la pagina de inicio */
 
 .secBusqueda {
   text-align: center;
@@ -20,7 +20,7 @@ input[type="search"] {
   border: 2px solid black;
   border-radius: 40px 20px 20px 40px;
   background: url('../imagenes/iconos/busqueda.svg') no-repeat right center;
-  background-color: #2E2E2E;
+  background-color: var(--colorBarraBusqueda);
   background-size: 5%;
 }
 
@@ -35,14 +35,16 @@ input[type="search"] {
 }
 
 h1 {
-  color: #EB75D1;
+  color: var(--colorTituloContenido);
   margin: 1%;
-  font-size: 32px;
+  font-size: clamp(18px, 5vw, 32px);
 }
 
-p {
-  font-size: 32px;
-  color: white;
+.pIntrod {
+  font-size: clamp(12px, 3vw, 30px);
+  text-align: justify;
+  /* color: white; */
+  color: var(--colorLetra);
 }
 
 /* Estilos slider */
@@ -79,4 +81,46 @@ p {
 
 .divSlider button.right {
   right: 10px;
+}
+
+/* Responsive  */
+
+/* Para el slider */
+
+@media screen and (max-width: 768px) {
+  .divSlider {
+    max-width: 300px;
+    margin-top: 6%;
+  }
+
+  .divSlider img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .divSlider button {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .divSlider {
+    max-width: 150px;
+    margin-top: 6%;
+  }
+
+  .divSlider img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .divSlider button {
+    padding: 4px;
+    font-size: 9px;
+  }
+
+
+
 }

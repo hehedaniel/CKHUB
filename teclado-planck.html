@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CKHUB</title>
-  <link rel="stylesheet" href="css/estilosDay.css">
+  <link rel="stylesheet" href="css/main.css"> <!-- Estilos globales -->
+  <link rel="stylesheet" href="css/tecladosInfo.css"> <!-- Estilo propia pagina -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
@@ -13,33 +14,33 @@
 </head>
 
 <body class="modoOscuro" id="body">
-
   <header>
     <nav>
-      <a href="index.html"><img src="imagenes/logo.png" alt="CKHUB-logo"></a>
+      <a href="index.html"><img src="imagenes/logo.png" alt="CKHUB-logo" id="logo"></a>
       <a href="teclados.html">Teclados</a>
       <a href="keymaps.html">Keymaps</a>
       <a href="qmkInfo.html">QMK</a>
+      <a href="#" onclick="return modoOscuro()"><img src="imagenes/iconos/theme.svg" alt="themeImg" class="themeImg"></a>
     </nav>
   </header>
   <main>
     <section class="secInfoTeclado">
-      <h4 class="rutaKeymap">
+      <h4 class="ruta">
         <a href="index.html">/home/</a>
         <a href="teclados.html">teclados/</a>
         <a href="teclado-planck.html">Planck.txt</a>
       </h4>
-      <h1 class="tituloKeymap">Planck</h1>
-      <h4 class="usuarioKeymap">Escrito por: user2 <a href="github.com"><img src="imagenes/iconos/reddit.svg" alt=""></a></h4>
+      <h1 class="titulo">Planck</h1>
+      <h4 class="usuario">Escrito por: user2 <a href="github.com"><img src="imagenes/iconos/reddit.svg" alt=""></a></h4>
       <div class="infoTeclado">
-        <p>Planck destaca por su enfoque minimalista y su disposición ortholinear que optimiza la colocación de las teclas para una escritura más eficiente. Su diseño compacto es ideal para espacios reducidos, y la posibilidad de programación brinda flexibilidad a los usuarios avanzados que buscan una experiencia altamente personalizada.</p>
+        <p>Planck destaca por su enfoque minimalista y su disposición Ortho linear que optimiza la colocación de las teclas para una escritura más eficiente. Su diseño compacto es ideal para espacios reducidos, y la posibilidad de programación brinda flexibilidad a los usuarios avanzados que buscan una experiencia altamente personalizada.</p>
         <section class="infoTecladoImagenes">
-          <img src="imagenes/teclados/planck/planck.jpg" alt="img-planck" class="imgPrincipal">
+          <img src="imagenes/teclados/planck/planck.webp" alt="img-planck" class="imgPrincipal">
           <div>
-            <img src="imagenes/teclados/planck/planck2.jpg" alt="img-planck" class="imgSecundaria">
-            <img src="imagenes/teclados/planck/planck3.jpg" alt="img-planck" class="imgSecundaria">
-            <img src="imagenes/teclados/planck/planck4.jpg" alt="img-planck" class="imgSecundaria">
-            <img src="imagenes/teclados/planck/planck1.jpg" alt="img-planck" class="imgSecundaria">
+            <img src="imagenes/teclados/planck/planck2.webp" alt="img-planck" class="imgSecundaria">
+            <img src="imagenes/teclados/planck/planck3.webp" alt="img-planck" class="imgSecundaria">
+            <img src="imagenes/teclados/planck/planck4.webp" alt="img-planck" class="imgSecundaria">
+            <img src="imagenes/teclados/planck/planck1.webp" alt="img-planck" class="imgSecundaria">
           </div>
         </section>
       </div>
@@ -54,41 +55,8 @@
       <a href="discord.com" target="_blank"> <img src="imagenes/iconos/discord.svg" alt="discord"> </a>
     </div>
   </footer>
-  <script>
-    function modoOscuro() {
-      let body = document.getElementById("body");
-      let modo = body.getAttribute("class");
 
-
-      if (modo == "modoDia") {
-        body.classList.remove("modoDia");
-        body.classList.add("modoOscuro");
-        localStorage.setItem('modoOscuro', 'true');
-      } else {
-        body.classList.remove("modoOscuro");
-        body.classList.add("modoDia");
-        localStorage.setItem('modoOscuro', 'false');
-      }
-      return false;
-    }
-
-    function checkModo() {
-      let body = document.getElementById("body");
-      let modo = body.getAttribute("class");
-
-
-      if (localStorage.getItem("modoOscuro") === "true"){
-        body.classList.remove("modoDia");
-        body.classList.add("modoOscuro");
-      } else {
-        body.classList.remove("modoOscuro");
-        body.classList.add("modoDia");
-      }
-      return false;
-    }
-
-    checkModo();
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+main{
+  text-align: center;
+}
+
+h2, h3{
+  font-size: clamp(12px, 3vw, 30px);
+  padding: 2%;
+  color: var(--colorPrimario200);
+}
+
+h2{
+  margin: 1%;
+}
+
+main a {
+  color: var(--colorPrimario200);
+  text-decoration: none;
+  font-size: clamp(10px, 2vw, 26px);
+}
+
+img{
+  width: 40%;
+}

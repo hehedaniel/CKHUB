@@ -1,0 +1,130 @@
+/* Archivo con los estilos para la pagina principal de keymaps */
+
+.pagTeclados{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--colorFondoBody);
+}
+
+/* Estilo filtros */
+
+.secFiltros{
+  background-color: var(--colorFondoFiltros);
+  /* width: 30%; */
+  padding: 0 4%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7%;
+}
+
+.filtros{
+  margin-top: 4%;
+}
+
+.filtros h5{
+  color: var(--colorPrimario300);
+  font-size: 30px;
+font-weight: bold;
+margin-top: 13%;
+}
+
+.filtros label{
+  color: var(--colorPrimario50);
+  font-size: 26px;
+}
+
+.opcionsFiltros{
+  margin-left: 10%;
+}
+
+/*  */
+
+.secKeymaps{
+  display: flex;
+  width: 100%;
+  justify-content: stretch;
+  padding: 5%;
+}
+
+table {
+  /* justify-self: center; */
+  align-self: center;
+  border-collapse: collapse;
+  margin: 0 7% 0 7%;
+  width: 86%;
+  height: 100%;
+}
+
+th{
+  color: var(--colorPrimario500);
+  font-size: 31px;
+}
+
+th:nth-child(1){
+  text-align: left;
+}
+td{
+  border-bottom: #292929 solid 1px;
+}
+
+td a{
+  color: var(--colorPrimario50);
+  font-size: 25px;
+  text-decoration: none;
+ /* Preguntar a justo como hacer que las lineas solo se queden en las letras */
+}
+
+tr > td:nth-child(2),
+tr > td:nth-child(3) {
+text-align: center;
+}
+
+tr > td:nth-child(1){
+  padding-left: 10%;
+}
+
+tr > th:nth-child(1){
+  padding-left: 10%;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+  .filtros h5 {
+    font-size: 20px;
+  }
+
+  .filtros label {
+    font-size: 15px;
+  }
+
+  th{
+    font-size: 25px;
+  }
+
+  td a{
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .filtros h5 {
+    font-size: 14px;
+  }
+
+  .filtros label {
+    font-size: 10px;
+  }
+
+  th{
+    font-size: 12px;
+  }
+
+  td a{
+    font-size: 8px;
+  }
+
+}
