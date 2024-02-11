@@ -33,6 +33,7 @@
   --colorTituloHeaderFooter: var(--colorPrimario500);
   --colorTituloContenido: var(--colorPrimario400);
   --colorFondoFiltros: #292929;
+  --colorFondoFila:#292929;
 }
 
 .modoDia {
@@ -44,6 +45,7 @@
   --colorTituloHeaderFooter: var(--colorPrimario600);
   --colorTituloContenido: var(--colorPrimario600);
   --colorFondoFiltros: #A8A8A8;
+  --colorFondoFila:#A8A8A8;
 }
 
 .themeImg {
@@ -54,6 +56,10 @@
   top: 0;
   margin: 1.1%;
   filter: invert(var(--colorImg));/* De esta forma invierto el color de la imagen para que cambie según el modo de la pagina */
+}
+
+a:hover{
+  cursor: pointer;
 }
 
 #logo:hover {
@@ -162,6 +168,11 @@ input[type=checkbox]:checked:hover {
 }
 
 /* Estilos de las rutas */
+
+.ruta{
+  display: flex;
+  flex-direction: row;
+}
 
 .ruta a {
   color: var(--colorSecundario50);

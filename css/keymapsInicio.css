@@ -63,6 +63,10 @@ td{
   border-bottom: #292929 solid 1px;
 }
 
+tbody > tr:hover{
+  background-color: var(--colorFondoFila);
+}
+
 td a{
   color: var(--colorPrimario50);
   font-size: 25px;
