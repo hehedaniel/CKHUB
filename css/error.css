@@ -1,3 +1,5 @@
+/* Estilos para la página de error 404 */
+
 main{
   text-align: center;
 }
@@ -20,4 +22,5 @@ main a {
 
 img{
   width: 40%;
+  margin: 1%;
 }

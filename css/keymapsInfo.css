@@ -28,14 +28,3 @@ pre{
   font-size: clamp(6px, 0.8vw, 22px);
   font-family: monospace;
 }
-
-
-/* Responsive */
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 350px) {
-
-}

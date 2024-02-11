@@ -6,11 +6,10 @@
   background-color: var(--colorFondoBody);
 }
 
-/* Estilo filtros */
+/* Estilo de los filtros */
 
 .secFiltros {
   background-color: var(--colorFondoFiltros);
-  /* width: 30%; */
   padding: 0 4%;
   display: flex;
   justify-content: center;
@@ -32,7 +31,7 @@
   font-size: 26px;
 }
 
-.opcionsFiltros {
+.opcionesFiltros {
   margin-left: 10%;
 }
 

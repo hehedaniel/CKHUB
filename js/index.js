@@ -1,3 +1,4 @@
+//Esta función cambia la clase del body en función del tema que deba estar
 function modoOscuro() {
   let body = document.getElementById("body");
   let modo = body.getAttribute("class");
@@ -14,6 +15,7 @@ function modoOscuro() {
   return false;
 }
 
+//Esta función sirve para comprobar que modo debe estar activo
 function checkModo() {
   let body = document.getElementById("body");
 
@@ -27,6 +29,7 @@ function checkModo() {
   return false;
 }
 
+//Este array es el que guarda las rutas de las imágenes para mostrar en el slider
 var imgRutas = [
   "imagenes/teclados/sofle/sofle.webp",
   "imagenes/teclados/corne/corne2.webp",
@@ -37,6 +40,7 @@ var imgRutas = [
 
 var posicion = localStorage.getItem("posicionSlider") || 0;
 
+//Función ejecutada al pulsar el botón de cambiar imagen en el slider
 function cambiarImagen(direccion) {
   if (direccion === "anterior") {
     posicion = (posicion - 1 + imgRutas.length) % imgRutas.length;

@@ -1,4 +1,4 @@
-/* Archivos con los estilos unicos para la pagina de inicio */
+/* Archivos con los estilos únicos para la página de inicio */
 
 .secBusqueda {
   text-align: center;
@@ -85,8 +85,6 @@ h1 {
 
 /* Responsive  */
 
-/* Para el slider */
-
 @media screen and (max-width: 768px) {
   .divSlider {
     max-width: 300px;
@@ -102,7 +100,6 @@ h1 {
     padding: 6px;
     font-size: 14px;
   }
-
 }
 
 @media screen and (max-width: 350px) {
@@ -120,7 +117,4 @@ h1 {
     padding: 4px;
     font-size: 9px;
   }
-
-
-
 }

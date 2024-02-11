@@ -1,4 +1,4 @@
-/* Archivo con los estilos para la pagina principal de keymaps */
+/* Archivo con los estilos para la página principal de keymaps */
 
 .pagTeclados{
   display: flex;
@@ -10,7 +10,6 @@
 
 .secFiltros{
   background-color: var(--colorFondoFiltros);
-  /* width: 30%; */
   padding: 0 4%;
   display: flex;
   justify-content: center;
@@ -37,8 +36,6 @@ margin-top: 13%;
   margin-left: 10%;
 }
 
-/*  */
-
 .secKeymaps{
   display: flex;
   width: 100%;
@@ -47,7 +44,6 @@ margin-top: 13%;
 }
 
 table {
-  /* justify-self: center; */
   align-self: center;
   border-collapse: collapse;
   margin: 0 7% 0 7%;
@@ -71,7 +67,6 @@ td a{
   color: var(--colorPrimario50);
   font-size: 25px;
   text-decoration: none;
- /* Preguntar a justo como hacer que las lineas solo se queden en las letras */
 }
 
 tr > td:nth-child(2),

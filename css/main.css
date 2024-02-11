@@ -1,5 +1,6 @@
 /* Archivo con los estilos globales */
 
+/* He decidido usar variables para almacenar los colores usados */
 :root {
   --colorPrimario500 :#E75ECA;
   --colorPrimario400: #EB75D1;
@@ -21,7 +22,7 @@
   font-family: 'Oswald', sans-serif;
 }
 
-/* Modo oscuro */
+/* Clases para los modos oscuro y modo día */
 
 .modoOscuro {
   --colorFondoHeaderFooter: #000000;
@@ -52,7 +53,7 @@
   right: 0;
   top: 0;
   margin: 1.1%;
-  filter: invert(var(--colorImg));/* De esta forma invierto el color de la imagen para que cambie segun el modo de la pagina */
+  filter: invert(var(--colorImg));/* De esta forma invierto el color de la imagen para que cambie según el modo de la pagina */
 }
 
 #logo:hover {
@@ -69,7 +70,7 @@
   }
 }
 
-/* Estilos para el menu navegacion */
+/* Estilos para el menú navegación */
 
 header {
   background-color: var(--colorFondoHeaderFooter);
@@ -168,7 +169,7 @@ input[type=checkbox]:checked:hover {
   font-size: 25px;
 }
 
-/* Estilos para el titulo y el usuario */
+/* Estilos para el título y el usuario */
 
 .secInfoKeymap {
   margin: 3% 10% 8% 10%;
@@ -230,7 +231,7 @@ input[type=checkbox]:checked:hover {
     font-size: 15px;
   }
 
-  /* Titulo */
+  /* Título */
 
   .titulo {
     font-size: 35px;
@@ -263,7 +264,6 @@ input[type=checkbox]:checked:hover {
   .luna {
     width: 12px;
     height: 12px;
-    /* margin: %; */
   }
 
   /* Footer responsive */
@@ -289,7 +289,7 @@ input[type=checkbox]:checked:hover {
     font-size: 12px;
   }
 
-  /* Titulo */
+  /* Título */
 
   .titulo {
     font-size: 25px;
@@ -307,13 +307,3 @@ input[type=checkbox]:checked:hover {
     height: 12px;
   }
 }
-
-/* Responsive */
-
-/* @media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 350px) {
-
-} */
